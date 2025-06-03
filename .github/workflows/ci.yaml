@@ -46,7 +46,7 @@ jobs:
 
   release:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/heads/main')
+    if: startsWith(github.ref, 'refs/heads/main') || startsWith(github.ref, 'refs/heads/workflow')
     steps:
       - name: Checkout
         uses: actions/checkout@v2
