@@ -3,6 +3,7 @@ name: Lint, Test and Release charts
 on:
   pull_request:
   push:
+  workflow_dispatch:
 
 jobs:
   lint-test:
